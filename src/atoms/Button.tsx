@@ -1,14 +1,22 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { Colors, ColorUtils } from "../Colors";
 
-export const Button = styled.button<{ width?: string }>`
+export const Button = styled.button<{
+  width?: string;
+  color?: keyof typeof Colors;
+  variant?: "string";
+  outlined?: boolean;
+}>`
   --button-opacity: 20%;
 
   height: 42px;
-  background: rgba(255, 255, 255, var(--button-opacity));
+  background: ${({ color = "white" }) =>
+    ColorUtils.withOpacityVariable(Colors[color], "button-opacity")};
   cursor: pointer;
+  font-weight: 700;
   outline: none;
   border: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 80%);
   border-radius: 5px;
   text-decoration: none;
   width: ${({ width }) => width ?? "100%"};
@@ -16,6 +24,35 @@ export const Button = styled.button<{ width?: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${({ outlined, color = "white" }) => {
+    return outlined
+      ? css`
+          background: transparent;
+
+          border-width: 1px;
+
+          border-style: solid;
+
+          border-color: ${ColorUtils.withOpacityVariable(
+            Colors[color],
+            "button-opacity"
+          )};
+        `
+      : "";
+  }}
+
+  ${({ variant = "default" }) => {
+    switch (variant) {
+      case "rounded":
+        return css`
+          height: 32px;
+          border-radius: 16px;
+        `;
+      default:
+        return "";
+    }
+  }}
 
   &:hover {
     --button-opacity: 30%;
