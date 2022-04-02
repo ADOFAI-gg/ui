@@ -2,34 +2,33 @@ import React from "react";
 import styled from "styled-components";
 import { useLinkAction } from "../context";
 
-type Props = {
-  to: string;
-};
-
 const Container = styled.a`
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 0;
-  letter-spacing: -0.011em;
-  color: #fff;
-  text-decoration: none;
+  font-size: 14px;
+  opacity: 80%;
+  transition: all ease 0.2s;
+  cursor: pointer;
   &:hover {
-    text-decoration: underline;
+    opacity: 100%;
   }
 `;
 
-export const NavLink: React.FC<Props> = ({ children, to }) => {
+export const FooterLink: React.FC<{ to?: string; internal?: boolean }> = ({
+  to,
+  children,
+  internal = false,
+}) => {
   const link = useLinkAction();
 
   return (
     <Container
       href={to}
       onClick={(e) => {
+        if (!internal || !to) return;
         e.preventDefault();
         link(to);
       }}
     >
-      {children}
+      › {children}
     </Container>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Icon: React.FC<
+export const Icon: React.FC<
   { src: string; size?: number } & Omit<
     React.HTMLAttributes<HTMLImageElement>,
     "width" | "height"
@@ -17,5 +17,3 @@ const Icon: React.FC<
     />
   );
 };
-
-export default Icon;

@@ -2,11 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import LogoImg from "../assets/logo.svg";
 import AuthNavMenu from "../molecules/AuthNavMenu";
-import Icon from "../atoms/Icon";
+import { Icon, NavLink } from "../atoms";
 import ArrowDown from "../assets/icons/ArrowDown.svg";
 import Manage from "../assets/icons/Manage.svg";
 import { useCurrentUser, useLinkAction } from "../context";
-import NavLink from "../atoms/NavLink";
 import UserProfileArea from "../molecules/UserProfileArea";
 
 const Container = styled.nav`
@@ -29,7 +28,7 @@ const Logo = styled.a`
   cursor: pointer;
 `;
 
-const Nav: React.FC = () => {
+export const Nav: React.FC = () => {
   const link = useLinkAction();
   const user = useCurrentUser();
 
@@ -67,5 +66,3 @@ const Nav: React.FC = () => {
     </Container>
   );
 };
-
-export default Nav;

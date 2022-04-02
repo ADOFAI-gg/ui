@@ -20,7 +20,7 @@ const Container = styled.a`
   }
 `;
 
-const Link: React.FC<Props> = ({ children, to }) => {
+export const Link: React.FC<Props> = ({ children, to }) => {
   const link = useLinkAction();
 
   return (
@@ -35,5 +35,3 @@ const Link: React.FC<Props> = ({ children, to }) => {
     </Container>
   );
 };
-
-export default Link;

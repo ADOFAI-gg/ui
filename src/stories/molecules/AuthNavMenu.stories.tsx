@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import NavLink from "../../atoms/NavLink";
+import { NavLink } from "../../atoms";
 import AuthNavMenu from "../../molecules/AuthNavMenu";
 
 export default {
