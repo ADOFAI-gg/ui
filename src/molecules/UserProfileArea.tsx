@@ -2,6 +2,7 @@ import React from "react";
 import { useCurrentUser } from "../context";
 import { User } from "../types";
 import Avatar from "../atoms/Avatar";
+import { Colors } from "../Colors";
 
 const UserProfileArea: React.FC = () => {
   const user = useCurrentUser() as User;
@@ -9,7 +10,7 @@ const UserProfileArea: React.FC = () => {
   return (
     <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
       <Avatar src={user.avatar} size={24} />
-      <span style={{ fontSize: 14 }}>{user.username}</span>
+      <span style={{ fontSize: 14, color: Colors.white }}>{user.username}</span>
     </div>
   );
 };
