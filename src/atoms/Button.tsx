@@ -4,7 +4,7 @@ import { Colors, ColorUtils } from "../Colors";
 export const Button = styled.button<{
   width?: string;
   color?: keyof typeof Colors;
-  variant?: "string";
+  variant?: "rounded" | "default";
   outlined?: boolean;
 }>`
   --button-opacity: 20%;
