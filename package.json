@@ -13,7 +13,8 @@
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "chromatic": "npx chromatic --project-token=86a5f2dfbece"
   },
   "dependencies": {
     "framer-motion": "^6.2.8",
