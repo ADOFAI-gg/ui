@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "../atoms";
-import { Link } from "../atoms";
-import { useLinkAction } from "../context";
+import { Button } from "@/atoms";
+import { Link } from "@/atoms";
+import { useLinkAction } from "@/context";
 
 const AuthNavMenu: React.FC = () => {
   const link = useLinkAction();

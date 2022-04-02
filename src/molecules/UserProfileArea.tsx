@@ -1,10 +1,10 @@
 import React from "react";
-import { useCurrentUser } from "../context";
-import { User } from "../types";
-import Avatar from "../atoms/Avatar";
-import { Colors } from "../Colors";
+import { useCurrentUser } from "@/context";
+import { User } from "@/types";
+import Avatar from "@/atoms/Avatar";
+import { Colors } from "@/Colors";
 
-const UserProfileArea: React.FC = () => {
+export const UserProfileArea: React.FC = () => {
   const user = useCurrentUser() as User;
 
   return (
@@ -14,5 +14,3 @@ const UserProfileArea: React.FC = () => {
     </div>
   );
 };
-
-export default UserProfileArea;

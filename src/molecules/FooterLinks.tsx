@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Typography } from "../atoms";
+import { Typography } from "@/atoms";
 
 const Container = styled.div`
   display: flex;

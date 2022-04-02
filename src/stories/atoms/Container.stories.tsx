@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { Container } from "../../atoms";
+import { Container } from "@/atoms";
 import React from "react";
 
 export default {

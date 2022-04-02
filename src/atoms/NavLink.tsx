@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { useLinkAction } from "../context";
+import { useLinkAction } from "@/context";
 
 type Props = {
   to: string;

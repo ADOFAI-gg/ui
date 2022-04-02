@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { Layout } from "../../organisms";
+import { Layout } from "@/organisms";
 import React from "react";
 
 export default {
@@ -10,7 +10,7 @@ export default {
   },
   argTypes: {
     type: {
-      options: ["default"],
+      options: ["default", "admin"],
       control: "radio",
     },
   },
@@ -24,3 +24,9 @@ const Template: ComponentStory<typeof Layout> = (props) => (
 );
 
 export const Default = Template.bind({});
+
+export const Admin = Template.bind({});
+
+Admin.args = {
+  type: "admin",
+};

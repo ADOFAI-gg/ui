@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { Nav } from "../../organisms";
-import { UserContext } from "../../context";
+import { Nav } from "@/organisms";
+import { UserContext } from "@/context";
 import { mockUser } from "../utils";
 
 export default {

@@ -1,5 +1,5 @@
-import { Colors } from "../Colors";
-import { User } from "../types";
+import { Colors } from "@/Colors";
+import { User } from "@/types";
 
 export const defaultArgTypes = {
   as: {

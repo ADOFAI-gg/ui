@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import LogoImg from "../assets/logo.svg";
-import AuthNavMenu from "../molecules/AuthNavMenu";
-import { Icon, NavLink } from "../atoms";
+import AuthNavMenu from "@/molecules/AuthNavMenu";
+import { Icon, NavLink } from "@/atoms";
 import ArrowDown from "../assets/icons/ArrowDown.svg";
 import Manage from "../assets/icons/Manage.svg";
-import { useCurrentUser, useLinkAction } from "../context";
-import UserProfileArea from "../molecules/UserProfileArea";
+import { useCurrentUser, useLinkAction } from "@/context";
+import { UserProfileArea } from "@/molecules/UserProfileArea";
 
 const Container = styled.nav`
   color: #fff;

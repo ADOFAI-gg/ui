@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Colors, ColorUtils } from "../Colors";
+import { Colors, ColorUtils } from "@/Colors";
 
 export const Button = styled.button<{
   width?: string;

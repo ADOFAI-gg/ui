@@ -1,8 +1,8 @@
 import React from "react";
-import { Typography } from "../atoms";
+import { Typography } from "@/atoms";
 import styled from "styled-components";
-import { FooterLinks } from "../molecules/FooterLinks";
-import { FooterLink } from "../atoms/FooterLink";
+import { FooterLinks } from "@/molecules/FooterLinks";
+import { FooterLink } from "@/atoms/FooterLink";
 
 const Container = styled.div`
   display: flex;

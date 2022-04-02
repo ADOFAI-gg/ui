@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Typography } from "../atoms";
-import { Colors, ColorUtils } from "../Colors";
+import { Container, Typography } from "@/atoms";
+import { Colors, ColorUtils } from "@/Colors";
 import { FooterLinksArea } from "./FooterLinksArea";
 
 export const Footer: React.FC<{ links?: boolean }> = ({ links = true }) => {

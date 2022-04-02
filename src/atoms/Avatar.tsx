@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { Colors } from "../Colors";
 
 const Avatar: React.FC<{ src?: string; size: number }> = ({ src, size }) => {
   const [loading, setLoading] = React.useState(false);

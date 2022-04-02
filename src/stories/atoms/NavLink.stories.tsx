@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { NavLink } from "../../atoms";
+import { NavLink } from "@/atoms";
 
 export default {
   title: "Atoms/Nav Link",
