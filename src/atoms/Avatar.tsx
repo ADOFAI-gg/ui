@@ -1,45 +1,14 @@
-import { motion } from "framer-motion";
 import React from "react";
+import Image from "@/atoms/Image";
 
 const Avatar: React.FC<{ src?: string; size: number }> = ({ src, size }) => {
-  const [loading, setLoading] = React.useState(false);
-
-  React.useEffect(() => {
-    if (!src) return;
-    setLoading(true);
-    const img = new Image();
-
-    img.src = src;
-
-    img.onload = () => {
-      setLoading(false);
-    };
-
-    return () => {
-      img.remove();
-    };
-  }, [src]);
-
-  if (!src) {
-    return <div />;
-  }
-
-  return loading ? (
-    <div
-      style={{
-        width: size,
-        height: size,
-      }}
-    />
-  ) : (
-    <motion.img
-      animate={{ opacity: 1 }}
-      initial={{ opacity: 0 }}
+  return (
+    <Image
       width={size}
       height={size}
-      style={{ borderRadius: size / 2 }}
       src={src}
-      alt="avatar"
+      alt="Avatar"
+      style={{ borderRadius: size / 2 }}
     />
   );
 };
