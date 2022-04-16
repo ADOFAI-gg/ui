@@ -1,7 +1,7 @@
 import React from "react";
 import { useCurrentUser } from "@/context";
 import { User } from "@/types";
-import Avatar from "@/atoms/Avatar";
+import { Avatar } from "@/atoms";
 import { Colors } from "@/Colors";
 
 export const UserProfileArea: React.FC = () => {

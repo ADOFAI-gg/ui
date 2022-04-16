@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React, { CSSProperties } from "react";
 
-const Image: React.FC<{
+export const Image: React.FC<{
   src?: string;
   width: number;
   height: number;
@@ -52,5 +52,3 @@ const Image: React.FC<{
     </div>
   );
 };
-
-export default Image;

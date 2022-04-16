@@ -4,3 +4,6 @@ export * from "./NavLink";
 export * from "./Icon";
 export * from "./Container";
 export * from "./Typography";
+export * from "./Avatar";
+export * from "./Image";
+export * from "./DifficultyIcon";
