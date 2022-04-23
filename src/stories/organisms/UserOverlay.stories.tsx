@@ -1,20 +1,16 @@
 import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { UserOverlay } from "@/organisms";
-import { Button } from "@/atoms";
+import { UserOverlayContent } from "@/organisms";
 import { mockUser } from "@/stories/utils";
 
 export default {
   title: "Organisms/User Overlay",
-  component: UserOverlay,
+  component: UserOverlayContent,
   args: {
     user: mockUser,
   },
-} as ComponentMeta<typeof UserOverlay>;
+} as ComponentMeta<typeof UserOverlayContent>;
 
-export const Default: ComponentStory<typeof UserOverlay> = (args) => (
-  <UserOverlay
-    {...args}
-    button={<Button style={{ height: 30 }}>Hover me</Button>}
-  />
+export const Default: ComponentStory<typeof UserOverlayContent> = (args) => (
+  <UserOverlayContent {...args} />
 );
