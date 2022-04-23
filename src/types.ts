@@ -4,4 +4,9 @@ export type User = {
   avatar?: string;
   banner?: string;
   admin: boolean;
+  status?: string;
+  stats?: {
+    ranking: number;
+    pp: number;
+  };
 };

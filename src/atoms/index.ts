@@ -7,3 +7,4 @@ export * from "./Typography";
 export * from "./Avatar";
 export * from "./Image";
 export * from "./DifficultyIcon";
+export * from "./Tooltip";

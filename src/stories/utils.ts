@@ -27,6 +27,12 @@ export const mockUser: User = {
     "https://cdn.discordapp.com/attachments/888733163138990091/959655737938821160/unknown.png",
   username: "GanjangFactory",
   banner:
-    "https://cdn.discordapp.com/attachments/888733163138990091/959655737938821160/unknown.png",
+    "https://media.discordapp.net/attachments/888733163138990091/967229646653505626/unknown.png",
   admin: false,
+  stats: {
+    ranking: 66236,
+    pp: 20854.81,
+  },
+  status:
+    ":NekoD: :NekoD: :NekoD: :NekoD: :NekoD: :NekoD: :NekoD: :NekoD: :NekoD: :NekoD: :NekoD: :NekoD: :NekoD: :NekoD: :NekoD: :NekoD: :NekoD: :NekoD:",
 };

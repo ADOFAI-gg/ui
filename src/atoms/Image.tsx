@@ -27,7 +27,7 @@ export const Image: React.FC<{
   }, [src]);
 
   if (!src) {
-    return <div />;
+    return <div style={{ width, height }} />;
   }
 
   return (
