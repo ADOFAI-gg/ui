@@ -14,7 +14,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prepare": "husky install",
-    "chromatic": "chromatic --exit-zero-on-changes"
+    "chromatic": "npx chromatic --project-token=86a5f2dfbece"
   },
   "dependencies": {
     "framer-motion": "^6.2.8",
