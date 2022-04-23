@@ -13,9 +13,6 @@ export default defineConfig({
       name: "adofai-gg-ui",
       entry: path.resolve(fileURLToPath(import.meta.url), "../src/index.tsx"),
     },
-    rollupOptions: {
-      external: ["react-dom/client"],
-    },
   },
   resolve: {
     alias: {
